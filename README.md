@@ -1,5 +1,5 @@
 # Identifying High-Potential Real Estate Inventment Opportunities:
-![Real estate image](https://github.com/dukebaya/Real-Estate-ForecastingTime-Series/raw/main/images/Real%20estate%20image.jpg)
+![images/Real estate image.jpg](https://github.com/dukebaya/Real-Estate-Forecasting-Time-Series/blob/main/images/Real%20estate%20image.jpg)
 
 Apex Assets Investment is an investment firm that buys and sells real estate in the USA and is facing challenges as to how they should make their investments. They have consulted us to provide guidance this issue to ease their process.
 We have used data from .[Zillow Research](https://www.zillow.com/research/data/). to achieve this objective. Zillow Research publishes top-tier Zillow Home Value Index (ZHVI): A measure of the typical home value and market changes across a given region and housing type.  It reflects the typical value for homes in the 35th to 65th percentile range.We have cleaned the data, forward filling of missing values, and anything else that would disturb the research. Time Series Modelling has been used in this notebook to produce future forecast property values based on previous observations, to identify underlying trends/ patterns within the data over time and to detect any signs of seasonality within the data provided. These factors will contribute towards determining how Apex Assets Investment build their portfolio.
@@ -41,10 +41,11 @@ We did some conversion of the data into the below formats:
 
 #### 3.3. EDA
 
-Having cleaned our dataset to only include Zip codes with top 10  prices,.[Images](http://localhost:8888/view/Images/ROIfor10zipcodes.png) we were left with the top 10 zipcodes displayed above. The 10 zipcodes seen here consisted of unique ID Zip codes between them. We were also able to explore the below:
-- Summary Statistics
-- Top 5 zipcodes with high ROI [images](http://localhost:8888/view/images/Top%20zips%20by%20EDA.jpg)
-- Analysis of the top 10 zipcodes Value, ROI,CV [images](http://localhost:8888/view/images/Top%2010.jpg)
+Having cleaned our dataset to only include Zip codes with top 10  prices we were left with the top 10 zipcodes displayed below. The 10 zipcodes seen here consisted of unique ID Zip codes between them. We were also able to explore the below:
+ - Summary Statistics
+- Top 5 zipcodes with high ROI ![images](https://github.com/dukebaya/Real-Estate-Forecasting-Time-Series/blob/main/images/Top5.png))
+- Analysis of the top 10 zipcodes Value, ROI,CV 
+- ![images](https://github.com/dukebaya/Real-Estate-Forecasting-Time-Series/blob/main/images/Top%2010.jpg))
 
 
 ## 4. Modeling 
@@ -55,7 +56,7 @@ To find the five zipcode areas that are the most optimal for real estate investm
 
 We used this model due to the nature of data and it various advantages such as the ability automatically selects the optimal values for the p, d, and q parameters, as well as seasonal parameters (P, D, Q, m) if applicable. This removes the need for manual parameter tuning, saving time and effort.
 
-[images](http://localhost:8888/view/images/Model%20Accuracy.jpg)
+![images](https://github.com/dukebaya/Real-Estate-Forecasting-Time-Series/blob/main/images/Model%20Accuracy.jpg)
 
 ## 5. Evaluation
 The script evaluates the accuracy of the trained models by comparing their predictions on the testing set with actual values, providing insights into the performance of the models in predicting future trends. On average the model's predictions were roughly 8.2% off from the actual values from our test set. The model is giving a lower ROI. Since we have a low margin of error we are comfortable to proceed with the mordeling.
@@ -67,7 +68,7 @@ In our investigation to assess the effectiveness of our models, we uncovered com
 ## 7. Recommendations
 
 These are the top 5 zipcodes by ROI one year out, as predicted by our models, and serve as our final recommendations.
-[images](http://localhost:8888/view/images/Final%20predictions.jpg)
+![images](https://github.com/dukebaya/Real-Estate-Forecasting-Time-Series/blob/main/images/Final%20predictions.jpg)
 Aspen
 Bridgehampton
 Amagansett
@@ -76,7 +77,7 @@ Cambridge
 
  
  ## For More Information
- For more info please review our full analysis in: [notebook](http://localhost:8888/notebooks/Phase4_Group_13%20(4).ipynb) and [slides](http://localhost:8888/files/Apex%20Assets%20Investments%20Presentation.pdf)
+ For more info please review our full analysis in [notebook](https://github.com/dukebaya/Real-Estate-Forecasting-Time-Series/blob/main/Phase4_Group_13%20(4).ipynb) and [slides](https://github.com/dukebaya/Real-Estate-Forecasting-Time-Series/blob/main/Apex%20Assets%20Investments%20Presentation.pdf)
 
 
 ## Authors
