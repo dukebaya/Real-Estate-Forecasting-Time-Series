@@ -50,26 +50,27 @@ Having cleaned our dataset to only include Zip codes with top 10  prices,.[Image
 - Plotting monthly returns with their respective rolling mean and rolling std for each of the top 10 zip codes.[Images](http://localhost:8888/view/Images/Rollingmean16038.png)
 
 ## 4. Modeling 
+Train Test Split: The script splits the time series data into training and testing sets, ensuring 80% of historical data is allocated for training to train the model effectively while keeping 20% for evaluation. The Performance baseline before modeling gives a ROI of 21.39% from 2016 to 2018. This will later be compared to the modeling and prediction results
 
-
-
-
-
-
+Modeling: ARIMA models are employed for time series forecasting on individual zipcodes. Functions are provided to automate the process, including data transformation, model fitting, forecasting, plotting, and evaluation.
 
 ## 5. Evaluation
-
-
-
+The script evaluates the accuracy of the trained models by comparing their predictions on the testing set with actual values, providing insights into the performance of the models in predicting future trends. On average the model's predictions were roughly 8.2% off from the actual values from our test set. The model is giving a lower ROI. Since we have a low margin of error we are comfortable to proceed with the mordeling. 
 
 ## 6. Conclusion 
 
-
-
+In our investigation to assess the effectiveness of our models, we uncovered compelling evidence suggesting their efficacy. By employing an exploratory data analysis (EDA) approach on our training dataset to identify five cities for investment and subsequently simulating investments in those selected cities on our test dataset, we realized a notable 21.39% return on investment. Comparatively, when leveraging modeling techniques to predict the optimal five cities for investment within New York over the duration of our test dataset, we attained a respectable 17.27% return on investment. This analysis underscores the value of our models' recommendations, indicating that even if their predictive accuracy is not exceptionally high, their insights remain valuable..
 
 
 ## 7. Recommendations
 
+These are the top 5 zipcodes by ROI one year out, as predicted by our models, and serve as our final recommendations.
+
+Aspen
+Bridgehampton
+Amagansett
+Brookline
+Cambridge
 
  
  ## For More Information
